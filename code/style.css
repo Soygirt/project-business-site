@@ -1,17 +1,13 @@
-/* Color: #15803d
-          #fbbf24 */
 
 /* After you've linked the CSS file in the HTML,
 this should turn the background blue ;) */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-img{
-  width:500px;
-}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -23,7 +19,6 @@ header {
   height: 30vh;;
   text-align: center;
   padding: 20px 0;
-  background-color:  #15803d;
   background:url("./image/flower2.jpg");
   background-position:center;
   background-size:100%;
@@ -35,10 +30,19 @@ header {
 
 }
 
-header h1{
+header h1,p{
   width: fit-content;
-  font-size: 40px;;
   backdrop-filter: blur(10px);
+  font-family: "DM Serif Display";
+}
+
+h1{
+  padding-inline: 10px;
+  font-size: 52px;
+}
+
+header p{
+  font-size: 20px;
 }
 /* Navigation Styles */
 nav {
@@ -50,37 +54,38 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
+  font-family: "DM Serif Display";
 }
 /* Content Styles */
-
+.flower-img-box{
+  display:flex;
+}
 .flower-img {
-
+width: 50%;
 }
 
 .flower3-img {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+width: 50%;
 }
 /* Form Styles */
 .form-container {
-  background-color: #fbbf24 ;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 1200px;
+  background-color: #EEEFF1 ;
+  padding: 1.25em;
+  border-radius: 0.625em;
+  margin: 1.25em auto;
+  max-width: 75em;
 }
 /* Page Image Styles */
 .page-image {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 /* Footer Styles */
 footer {
+  color: white;
   text-align: center;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 1.25em;
+  background-color: black;
 }
 
 /* Media Queries */
@@ -91,13 +96,13 @@ footer {
     align-items: center;
   }
   .form-container {
-    margin: 20px 0;
+    margin: 1.25em 0;
   }
 }
 
 @media screen and (max-width: 480px) {
   /* Styles for mobile screens */
   nav a {
-    padding: 8px 16px;
+    padding: 0.5em 1em;
   }
 }

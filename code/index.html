@@ -12,34 +12,74 @@
     <!-- dont forget to add a css file and link it here! -->
   </head>
   <body>
+    <!--header-->
     <div class="container">
       <header>
         <h1>Flower Shop</h1>
         <p>Your source for beautiful flowers!</p>
       </header>
+      
+      <!--nav-->
       <nav>
         <a href="#">Home</a>
         <a href="#">Products</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
       </nav>
+
+      <!--images-->
+      <div class="flower-img-box">
       <img src="./image/flower.jpg" class="flower-img">
       <img src="./image/flower3.jpg" class="flower3-img">
+    </div>
+
+    <!--form-->
       <div class="content">
         <div class="form-container">
           <h2>Contact Us</h2>
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Submit</button>
-          </form>
+
+          <!--name-->
+    <form>
+      <div class="input-container">
+        <label for="name">
+        Name:
+        </label>
+          <input type="text" name="name"/>
+      </div>
+
+<!--email form-->
+      <div class="input-container">
+        <label for="name">
+        E-mail:
+        </label>
+          <input 
+            type="email" 
+            name="email"/>
+      </div>
+
+      <!--message for friend-->
+      <div class="textarea">
+        <label for="message">Message:
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="5" 
+            placeholder="Message for your friend.">
+          </textarea>
+        </label>
+      </div>
+      
+      <!-- submit button-->
+      <div class="submit-button">
+        <button type="submit">Submit
+        </button>
+      </div>
+
+    </form>
+        
         </div>
         <div class="page-image">
-          <img src="page-image.jpg" alt="Flower Shop">
+          <img src="" class="flower2-img">
         </div>
       </div>
     </div>
