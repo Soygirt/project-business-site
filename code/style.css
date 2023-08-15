@@ -1,5 +1,103 @@
+/* Color: #15803d
+          #fbbf24 */
+
 /* After you've linked the CSS file in the HTML,
 this should turn the background blue ;) */
 body {
-  background: blue;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  width:500px;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* Header Styles */
+header {
+  height: 30vh;;
+  text-align: center;
+  padding: 20px 0;
+  background-color:  #15803d;
+  background:url("./image/flower2.jpg");
+  background-position:center;
+  background-size:100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header h1{
+  width: fit-content;
+  font-size: 40px;;
+  backdrop-filter: blur(10px);
+}
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+/* Content Styles */
+
+.flower-img {
+
+}
+
+.flower3-img {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Form Styles */
+.form-container {
+  background-color: #fbbf24 ;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+/* Page Image Styles */
+.page-image {
+  text-align: center;
+  margin-top: 20px;
+}
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for mobile screens */
+  nav a {
+    padding: 8px 16px;
+  }
 }

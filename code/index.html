@@ -3,15 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Site</title>
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- dont forget to add a css file and link it here! -->
   </head>
   <body>
-    <h1>Business name 🌻</h1>
-
-    <!-- video or image as a header is cool :) -->
-
-    <!-- Signup form -->
+    <div class="container">
+      <header>
+        <h1>Flower Shop</h1>
+        <p>Your source for beautiful flowers!</p>
+      </header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+      <img src="./image/flower.jpg" class="flower-img">
+      <img src="./image/flower3.jpg" class="flower3-img">
+      <div class="content">
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="page-image">
+          <img src="page-image.jpg" alt="Flower Shop">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 Flower Shop. All rights reserved.</p>
+    </footer>
 
   </body>
 </html>
