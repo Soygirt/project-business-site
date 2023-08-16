@@ -62,7 +62,7 @@
           <!-- Select Input -->
           <div class="input-container">
             <label for="bouquet-size">Bouquet size :</label>
-            <select name="bouquet-size" id="bouquet-size" required>
+            <select name="bouquet-size" id="bouquet-size" class="option-box" required>
               <option disabled selected>Bouquet size</option>
               <option value="small">Small</option>
               <option value="medium">Medium</option>
@@ -75,13 +75,15 @@
             <label for="time">
               Delivery time :
             </label>
-            <input type="radio" name="time" value="morning" required />Morning (9am to 11am)
-            <input type="radio" name="time" value="midday" />Midday (11am to 1pm)
-            <input type="radio" name="time" value="afternoon" />Afternoon (1pm to 4pm)
+            <div class="radio-box">
+              <input type="radio" name="time" value="morning" required />Morning (9am to 11am)
+              <input type="radio" name="time" value="midday" />Midday (11am to 1pm)
+              <input type="radio" name="time" value="afternoon" />Afternoon (1pm to 4pm)
+            </div>
           </div>
 
           <!--message for friend-->
-          <div class="textarea">
+          <div class="input-container">
             <label for="message">Message :
               <textarea id="message" name="message" rows="5" placeholder="Message for your friend."></textarea>
             </label>
